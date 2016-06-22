@@ -1,0 +1,66 @@
+
+body{
+    background: #1ad;
+}
+.btn-outline.btn-white {
+    box-shadow: 0 0 0 2px rgba(255,255,255,.8)inset;
+    color: rgba(255,255,255,.8);
+}
+.btn-rounded {
+    border-radius: 50px !important;
+}
+.progress-button-style-fill.progress-button-dir-horizontal, .progress-button-style-fill.progress-button-dir-vertical {
+    overflow: hidden;
+}
+
+.btn-outline {
+    background: 0 0;
+    border-color: transparent;
+    font-weight: 400;
+}
+.progress-login {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 45px;
+    padding: 0 25px;
+}
+
+.progress-button {
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+    outline: none;
+    border: none;
+    background: #1cd;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    line-height: 3;
+}
+
+.input-underline {
+    background: 0 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #3ab;
+    border-radius: 0;
+    width:100%;
+    line-height: 40px;
+}
+
+.border-stnd{
+    padding: 20px;
+    border: solid #3ab;
+}
+.login-margin{
+    margin-top: 100px;
+}
+
+.font-icon-login{
+    font-size: 60px;
+    margin: 40px;
+}
+.site-font{
+    color: #3ab;
+}

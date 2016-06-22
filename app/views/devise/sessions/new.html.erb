@@ -1,0 +1,44 @@
+<div class="col-sm-6 col-sm-offset-3 border-stnd login-margin">
+  <div class="col-sm-12">
+    <div class="col-sm-4 col-sm-offset-5 font-icon-login site-font">
+      <%= image_tag "man.png" , height: 100, width: 100%>
+    </div>
+  </div>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="col-sm-12 form-group">
+  <div class="col-sm-8 col-sm-offset-2">
+    <%= f.email_field :email, autofocus: true,class:"input-underline", placeholder: "Email" %>
+  </div>
+  </div>
+  <div class="col-sm-12 form-group">
+  <div class="col-sm-8 col-sm-offset-2">
+    <%= f.password_field :password, autocomplete: "off",class:"input-underline", placeholder: "Password" %>
+  </div>
+  </div>
+      <div class="col-sm-12 site-font">
+      <div class="col-sm-8 col-sm-offset-2">
+        <% if devise_mapping.rememberable? -%>
+            <div class="field">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %>
+            </div>
+        <% end -%>
+      </div>
+      </div>
+
+
+
+  <div class="col-sm-12">
+    <div class="col-sm-4 col-sm-offset-2">
+      <%= f.submit "Log in" ,class: "btn-white btn-outline btn-lg btn-rounded progress-button" %>
+    </div>
+    <div class="col-sm-4">
+      <%= link_to "Sign up", new_registration_path(resource_name), class: "btn-white btn-outline btn-lg btn-rounded progress-button pull-right" %>
+    </div>
+
+  </div>
+<% end %>
+
+</div>
+<%#= render "devise/shared/links" %>

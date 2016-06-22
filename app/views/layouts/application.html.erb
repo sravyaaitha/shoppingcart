@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= image_tag "light-bulb.png" , height: 100, width: 100%>
+<div class="col-sm-10 col-sm-offset-2">
+  <ul>
 
+    <li class="btn-white btn-outline btn-lg btn-rounded progress-button"> What is this?</li>
+    <li class="btn-white btn-outline btn-lg btn-rounded progress-button"> Contact Us</li>
+  </ul>
+</div>
 <%= yield %>
 
 </body>
